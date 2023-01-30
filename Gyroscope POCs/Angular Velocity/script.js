@@ -14,7 +14,7 @@ sensor.onreading = () => {
 
   wheel.style.left = wheel.offsetLeft + x + "px";
   wheel.style.top = wheel.offsetTop - y + "px";
-  wheel.style.transform = `rotate(${x}deg)`;
+  wheel.style.transform = `rotate(${z}deg)`;
 };
 
 sensor.onerror = (event) => {
