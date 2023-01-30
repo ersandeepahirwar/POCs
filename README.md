@@ -5,4 +5,4 @@
 <img src="https://github.com/ersandeepahirwar/POCs/blob/master/Gyroscope%20POCs/Device%20Orientation/Oneview.jpg" alt="Device Orientation" width="100%" />
 
 ### [Object Detector](https://ersandeepahirwar.github.io/POCs/Gyroscope%20POCs/Object%20Detector/)
-<img src="" alt="Object Detector" width="100%" />
+<img src="https://github.com/ersandeepahirwar/POCs/blob/master/Gyroscope%20POCs/Object%20Detector/Oneview.jpg" alt="Object Detector" width="100%" />
