@@ -6,9 +6,9 @@ let z;
 sensor.start();
 
 sensor.onreading = () => {
-  x = sensor.x * 10;
-  y = sensor.y * 10;
-  z = sensor.z * -10;
+  x = sensor.x * 100;
+  y = sensor.y * 100;
+  z = sensor.z * -33;
 
   const wheel = document.querySelector(".wheel");
 
