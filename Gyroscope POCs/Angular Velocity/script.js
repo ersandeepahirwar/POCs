@@ -7,7 +7,7 @@ let z;
 
 sensor.start();
 sensor.onreading = () => {
-  x = sensor.x;
+  x = sensor.x * 100;
   y = sensor.y;
   z = sensor.z;
 
