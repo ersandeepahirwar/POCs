@@ -34,6 +34,7 @@ body {
   position: absolute;
   top: 85px;
   left: 85px;
+  transition: left 0.2s linear, top 0.2s linear, transform 0.2s linear;
 }
 
 .button {
