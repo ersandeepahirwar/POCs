@@ -36,10 +36,3 @@ body {
   left: 85px;
   transition: left 0.2s linear, top 0.2s linear, transform 0.2s linear;
 }
-
-.button {
-  margin-top: 10px;
-  font-size: 14px;
-  background-color: lightgreen;
-  border-radius: 20px;
-}
