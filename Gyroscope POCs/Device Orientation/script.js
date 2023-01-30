@@ -5,8 +5,8 @@ const maxX = garden.clientWidth - ball.clientWidth;
 const maxY = garden.clientHeight - ball.clientHeight;
 
 const handleOrientation = (event) => {
-  let x = event.alpha;
-  let y = event.beta;
+  let x = event.beta;
+  let y = event.gamma;
 
   if (x > 90) {
     x = 90;
