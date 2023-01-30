@@ -6,14 +6,14 @@ let z;
 sensor.start();
 
 sensor.onreading = () => {
-  x = sensor.x * 100;
-  y = sensor.y * 100;
-  z = sensor.z * -33;
+  x = sensor.x;
+  y = sensor.y;
+  z = sensor.z;
 
-  const wheel = document.querySelector(".ball");
+  const wheel = document.querySelector(".wheel");
 
-  wheel.style.left = ball.offsetLeft + x + "px";
-  wheel.style.top = ball.offsetTop - y + "px";
+  wheel.style.left = wheel.offsetLeft + x + "px";
+  wheel.style.top = wheel.offsetTop - y + "px";
   wheel.style.transform = `rotate(${x}deg)`;
 };
 
