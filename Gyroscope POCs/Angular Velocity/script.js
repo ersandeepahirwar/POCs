@@ -1,17 +1,21 @@
-const wheel = document.querySelector(".wheel");
-
 let sensor = new Gyroscope();
 let x;
 let y;
 let z;
 
 sensor.start();
-sensor.onreading = () => {
-  x = sensor.x * 100;
-  y = sensor.y * 100;
-  z = sensor.z * 100;
 
-  wheel.style.left = wheel.offsetLeft + x + "px";
-  wheel.style.top = wheel.offsetTop - y + "px";
+sensor.onreading = () => {
+  x = sensor.x;
+  y = sensor.y;
+  z = sensor.z;
+
+  const wheel = document.querySelector(".ball");
+  wheel.style.left = ball.offsetLeft + x + "px";
+  wheel.style.top = ball.offsetTop - y + "px";
   wheel.style.transform = `rotate(${x}deg)`;
+};
+
+sensor.onerror = (event) => {
+  alert(event.error.name, event.error.message);
 };
