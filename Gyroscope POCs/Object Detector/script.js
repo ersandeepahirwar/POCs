@@ -8,8 +8,11 @@ const handleOrientation = (event) => {
   let x = event.beta;
   let y = event.gamma;
 
-  ball.style.left = `${x}px`;
-  ball.style.top = `${y}px`;
+  ball.style.left = `${x + maxX / 2}px`;
+  ball.style.top = `${y + maxY / 2}px`;
+
+  console.log(ball.style.top);
+  console.log(ball.style.left);
 
   if (
     ball.offsetLeft > 77 ||
