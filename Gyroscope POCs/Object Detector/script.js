@@ -12,9 +12,9 @@ const handleOrientation = (event) => {
   ball.style.top = `${y}px`;
 
   if (
-    ball.offsetLeft > 170 ||
+    ball.offsetLeft > 77 ||
     ball.offsetLeft < 0 ||
-    ball.offsetTop > 170 ||
+    ball.offsetTop > 77 ||
     ball.offsetTop < 0
   ) {
     ball.style.backgroundColor = "#ff4500";
