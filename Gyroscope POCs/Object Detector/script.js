@@ -5,14 +5,41 @@ const maxX = garden.clientWidth - ball.clientWidth;
 const maxY = garden.clientHeight - ball.clientHeight;
 
 const handleOrientation = (event) => {
-  let x = event.beta;
-  let y = event.gamma;
+  let beta = event.beta;
+  let gamma = event.gamma;
 
-  ball.style.left = `${x + maxX / 2}px`;
-  ball.style.top = `${y + maxY / 2}px`;
+  if (beta > 90) {
+    beta = 90;
+  }
 
-  console.log(ball.style.top);
-  console.log(ball.style.left);
+  if (beta < -90) {
+    beta = -90;
+  }
+
+  if (gamma > 90) {
+    gamma = 90;
+  }
+
+  if (gamma < -90) {
+    gamma = -90;
+  }
+
+  if (beta === 0 && gamma === 0) {
+    ball.style.top = `${maxY / 2}px`;
+    ball.style.left = `${maxX / 2}px`;
+  }
+
+  if (beta++) {
+    ball.style.top = `${maxY / 2 + beta}px`;
+  } else if (beta--) {
+    ball.style.top = `${maxY / 2 - beta}px`;
+  }
+
+  if (gamma++) {
+    ball.style.left = `${maxX / 2 + gamma}px`;
+  } else if (gamma--) {
+    ball.style.left = `${maxX / 2 - gamma}px`;
+  }
 
   if (
     ball.offsetLeft > 77 ||
